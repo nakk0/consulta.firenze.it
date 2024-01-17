@@ -13,14 +13,6 @@
             p: "Oltre a svolgere un ruolo di advocacy, la Consulta Provinciale degli Studenti di Firenze organizza anche eventi, incontri e campagne informative, al fine di sensibilizzare la comunità studentesca su questioni rilevanti e incoraggiare la partecipazione attiva. In questo modo, la Consulta diventa un punto di riferimento per gli studenti che desiderano essere coinvolti nella costruzione di un ambiente educativo più inclusivo, equo e partecipativo.",
         },
     ];
-
-    import { fade } from 'svelte/transition';
-    
-    let isVisible = false;
-
-    function fadeIn(){
-        isVisible = true;
-    }
 </script>
 
 
@@ -45,5 +37,8 @@
                 <p>{p}</p>
             </div>
         {/each}
+    </div>
+    <div>
+        
     </div>
 </div>
