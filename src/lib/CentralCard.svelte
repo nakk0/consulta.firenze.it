@@ -1,4 +1,10 @@
 <script>
+    import ig_logo from '../assets/logos/instagram.webp';
+    import gmail_logo from '../assets/logos/gmail.webp';
+    import cps_logo from '../assets/logos/consulta.jpeg';
+    import fb_logo from '../assets/logos/facebook.png';
+    import pegaso from '../assets/images/pegaso.jpg';
+
     let paragraphs = [
         {
             title: "Rappresentanza Studenti",
@@ -16,22 +22,22 @@
 
     let logos = [
         {
-            src: "logos/instagram.webp",
+            src: ig_logo,
             alt: "instagram logo",
             url: "https://www.instagram.com/cps_firenze/"
         },
         {
-            src: "logos/gmail.webp",
+            src: gmail_logo,
             alt: "gmail logo",
-            url: ""
+            url: "mailto:consultadifirenze@gmail.com"
         },
         {
-            src: "logos/consulta.jpeg",
+            src: cps_logo,
             alt: "website consulta",
             url: "https://cms.csa.fi.it/Consulta/tabid/259/Default.aspx"
         },
         {
-            src: "logos/facebook.png",
+            src: fb_logo,
             alt: "facebook logo",
             url: "https://www.facebook.com/cpsfi/?locale=it_IT"
         }
@@ -49,7 +55,7 @@
 
     <div class="flex justify-center my-5 mx-2 max-w-5/6">
         <img
-            src="images/palazzo-del-pegaso-via-cavour-firenze.jpg"
+            src= {pegaso}
             alt="foto palazzo pegaso"
             class="rounded-3xl sm:w-5/6"
         />
@@ -61,8 +67,7 @@
                 <p>{p}</p>
             </div>
         {/each}
-
-        <div class="grid grid-cols-2 place-items-center gap-4 sm:w-5/6 mb-5">
+        <div class="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4 sm:w-5/6 my-5">
             {#each logos as {src, alt, url}}
                 <div class="flex justify-center bg-[#e2e2e2] rounded-xl w-full min-h-full">
                     <a href="{url}" target="_blank" class="flex justify-center">
