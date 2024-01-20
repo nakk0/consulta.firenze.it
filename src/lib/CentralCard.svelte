@@ -1,9 +1,9 @@
 <script>
-    import ig_logo from '../assets/logos/instagram.webp';
-    import gmail_logo from '../assets/logos/gmail.webp';
-    import cps_logo from '../assets/logos/consulta.jpeg';
-    import fb_logo from '../assets/logos/facebook.png';
-    import pegaso from '../assets/images/pegaso.jpg';
+    import ig_logo from "../assets/logos/instagram.webp";
+    import gmail_logo from "../assets/logos/gmail.webp";
+    import cps_logo from "../assets/logos/consulta.jpeg";
+    import fb_logo from "../assets/logos/facebook.png";
+    import pegaso from "../assets/images/pegaso.jpg";
 
     let paragraphs = [
         {
@@ -24,58 +24,71 @@
         {
             src: ig_logo,
             alt: "instagram logo",
-            url: "https://www.instagram.com/cps_firenze/"
+            url: "https://www.instagram.com/cps_firenze/",
         },
         {
             src: gmail_logo,
             alt: "gmail logo",
-            url: "mailto:consultadifirenze@gmail.com"
+            url: "mailto:consultadifirenze@gmail.com",
         },
         {
             src: cps_logo,
             alt: "website consulta",
-            url: "https://cms.csa.fi.it/Consulta/tabid/259/Default.aspx"
+            url: "https://cms.csa.fi.it/Consulta/tabid/259/Default.aspx",
         },
         {
             src: fb_logo,
             alt: "facebook logo",
-            url: "https://www.facebook.com/cpsfi/?locale=it_IT"
-        }
-
-    ]
+            url: "https://www.facebook.com/cpsfi/?locale=it_IT",
+        },
+    ];
 </script>
 
+<main>
+    <div
+        class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#fffbff] sm:rounded-3xl"
+    >
+        <p class="md:text-5xl sm:text-4xl text-3xl font-bold text-center pt-5">
+            Consulta Provinciale Degli Studenti Firenze
+        </p>
 
-<div
-    class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#fffbff] sm:rounded-3xl"
->
-    <p class="md:text-5xl sm:text-4xl text-3xl font-bold text-center pt-5">
-        Consulta Provinciale Degli Studenti Firenze
-    </p>
-
-    <div class="flex justify-center my-5 mx-2 max-w-5/6">
-        <img
-            src= {pegaso}
-            alt="foto palazzo pegaso"
-            class="rounded-3xl sm:w-5/6"
-        />
-    </div>
-    <div class="grid grid-cols-1 place-items-center mx-2 sm:mx-0">
-        {#each paragraphs as { title, p }}
-            <div class="sm:w-5/6 text-center bg-[#e2e2e2] my-5 px-1 rounded-xl text-pretty">
-                <p class="text-2xl font-[600] text-start my-2">{title}</p>
-                <p>{p}</p>
-            </div>
-        {/each}
-        <div class="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4 sm:w-5/6 my-5">
-            {#each logos as {src, alt, url}}
-                <div class="flex justify-center bg-[#e2e2e2] rounded-xl w-full min-h-full">
-                    <a href="{url}" target="_blank" class="flex justify-center">
-                        <img src="{src}" alt="{alt}" class="w-1/4 my-5 object-contain">
-                    </a>
+        <div class="flex justify-center my-5 mx-2 max-w-5/6">
+            <img
+                src={pegaso}
+                alt="foto palazzo pegaso"
+                class="rounded-3xl sm:w-5/6"
+            />
+        </div>
+        <div class="grid grid-cols-1 place-items-center mx-2 sm:mx-0">
+            {#each paragraphs as { title, p }}
+                <div
+                    class="sm:w-5/6 text-center bg-[#e2e2e2] my-5 px-1 rounded-xl text-pretty"
+                >
+                    <p class="text-2xl font-[600] text-start my-2">{title}</p>
+                    <p>{p}</p>
                 </div>
             {/each}
+            <div
+                class="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4 sm:w-5/6 my-5"
+            >
+                {#each logos as { src, alt, url }}
+                    <div
+                        class="flex justify-center bg-[#e2e2e2] rounded-xl w-full min-h-full"
+                    >
+                        <a
+                            href={url}
+                            target="_blank"
+                            class="flex justify-center"
+                        >
+                            <img
+                                {src}
+                                {alt}
+                                class="w-1/4 my-5 object-contain"
+                            />
+                        </a>
+                    </div>
+                {/each}
+            </div>
         </div>
     </div>
-    
-</div>
+</main>
