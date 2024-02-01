@@ -10,6 +10,6 @@
   
 <style>
   :root{
-    background-color: #a8a7a7;
+    background-color: #24225C;
   }
 </style>

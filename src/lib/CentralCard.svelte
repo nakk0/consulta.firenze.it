@@ -3,7 +3,7 @@
     import gmail_logo from "../assets/logos/gmail.webp";
     import cps_logo from "../assets/logos/consulta.jpeg";
     import fb_logo from "../assets/logos/facebook.png";
-    import pegaso from "../assets/images/pegaso.jpg";
+    import firenze from "../assets/images/firenze.jpg";
 
     let paragraphs = [
         {
@@ -42,27 +42,32 @@
             url: "https://www.facebook.com/cpsfi/?locale=it_IT",
         },
     ];
+
+    let colors = {
+        card: "#ADA1CC",
+        p: "#FDD9C3",
+    };
 </script>
 
 <main>
     <div
-        class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#fffbff] sm:rounded-3xl"
+        class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#24225C] sm:bg-[#ADA1CC] sm:rounded-3xl shadow-lg"
     >
-        <p class="md:text-5xl sm:text-4xl text-3xl font-bold text-center pt-5">
+        <p class="md:text-5xl sm:text-4xl text-3xl font-bold text-center p-10 sm:p-20 text-[#FBB14D] sm:text-[#000000]">
             Consulta Provinciale Degli Studenti Firenze
         </p>
 
-        <div class="flex justify-center my-5 mx-2 max-w-5/6">
+        <div class="flex justify-center mx-2 max-w-5/6 ">
             <img
-                src={pegaso}
+                src={firenze}
                 alt="foto palazzo pegaso"
-                class="rounded-3xl sm:w-5/6"
+                class="rounded-3xl sm:w-5/6 sm:border-0 border border-[#FBB14D] shadow-lg"
             />
         </div>
         <div class="grid grid-cols-1 place-items-center mx-2 sm:mx-0">
             {#each paragraphs as { title, p }}
                 <div
-                    class="sm:w-5/6 text-center bg-[#e2e2e2] my-5 px-1 rounded-xl text-pretty"
+                    class="sm:w-5/6 text-center bg-[#9593C3] my-5 p-3 rounded-xl text-justify border sm:border-0 border-[#FBB14D] shadow-lg"
                 >
                     <p class="text-2xl font-[600] text-start my-2">{title}</p>
                     <p>{p}</p>
@@ -73,7 +78,7 @@
             >
                 {#each logos as { src, alt, url }}
                     <div
-                        class="flex justify-center bg-[#e2e2e2] rounded-xl w-full min-h-full"
+                        class="flex justify-center bg-[#9593C3] rounded-xl w-full min-h-full shadow-lg"
                     >
                         <a
                             href={url}
