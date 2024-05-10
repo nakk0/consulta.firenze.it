@@ -51,7 +51,7 @@
 
 <main>
     <div
-        class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#24225C] sm:bg-[#ADA1CC] sm:rounded-3xl shadow-lg"
+        class="min-h-screen xl:w-2/3 lg:w-3/4 sm:w-5/6 mx-auto sm:my-2 bg-[#24225C] sm:bg-[#ADA1CC] sm:rounded-3xl sm:shadow-lg"
     >
         <p class="md:text-5xl sm:text-4xl text-3xl font-bold text-center p-10 sm:p-20 text-[#FBB14D] sm:text-[#000000]">
             Consulta Provinciale Degli Studenti Firenze
