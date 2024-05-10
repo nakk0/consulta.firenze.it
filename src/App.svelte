@@ -5,7 +5,7 @@
 
 <main>
   <Card />
-  <Footer color={"text-[#D3D3D3]"}/>
+  <Footer color={"text-[#656565]"}/>
 </main>
   
 <style>
